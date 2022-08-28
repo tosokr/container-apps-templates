@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vnet_name": {
+      "value": "vnet-container-apps-env"
+    },      
+    "vnet_address_cidrs": {
+      "value": ["10.0.0.0/16"]
+    },      
+    "subnet_id": {
+      "value": ""
+    },      
+    "subnet_name": {
+      "value": "sn-container-apps"
+    },      
+    "subnet_address_cidr": {
+      "value": "10.0.0.0/23"
+    },      
+    "nsg_name": {
+      "value": "nsg-container-apps"
+    },      
+    "nsg_allowed_ips":{
+      "value": ["8.8.8.8","9.9.9.9"]
+    },
+    "environment_name": {
+      "value": "tosokr-custom-vnet"
+    },   
+    "internal_environment": {
+      "value": false
+    },
+    "acr_deploy":{
+      "value": true
+    }
+  }
+}

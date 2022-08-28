@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "container_app_name":{
+      "value": "ubuntu"
+    },
+    "environment_name": {
+      "value": "tosokr-custom-vnet"
+    },
+    "container_registry_login_server": {
+      "value": "docker.io"
+    },
+    "container_image_repository": {
+      "value": "library/ubuntu"
+    },
+    "container_image_sha256_digest": {
+      "value": "sha256:bace9fb0d5923a675c894d5c815da75ffe35e24970166a48a4460a48ae6e0d19"
+    },
+    "dapr_enable": {
+      "value": true
+    }
+  }
+}

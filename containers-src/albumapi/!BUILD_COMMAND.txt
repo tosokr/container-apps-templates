@@ -1,0 +1,1 @@
+az acr build -t albumapi:{{.Run.ID}} -r <ACR_NAME> .
